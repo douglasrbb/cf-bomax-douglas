@@ -1,0 +1,69 @@
+div.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    padding: 1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#coin{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+}
+
+#coin div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.bomax{
+    background-image: url(images/bomax.jpg);
+}
+
+.animate-bomax{
+    animation: flipbomax 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipbomax {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1800deg);
+    }
+}
+
+.douglas{
+    background-image: url(images/douglas.jpg);
+    transform: rotateY(-180deg);
+}
+
+.animate-douglas{
+    animation: flipdouglas 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes flipdouglas {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1620deg);
+    }
+}
