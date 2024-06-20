@@ -1,3 +1,19 @@
+body{
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: fill;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
 div.container{
     margin: auto;
     display: flex;
@@ -11,8 +27,21 @@ button{
     border: none;
     border-radius: 20px;
     color: white;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+#status{
+	font-size: xxx-large;
+	color: white;
+	text-shadow: 2px 2px 3px black;
 }
 
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 #coin{
     position: relative;
     width: 15rem;
